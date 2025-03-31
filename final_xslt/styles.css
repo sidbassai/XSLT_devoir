@@ -1,0 +1,433 @@
+/* Police esthétique machine à écrire */
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+/* Styles de base */
+:root {
+    --paper-color: #f5f2e8;
+    --text-color: #333333;
+    --link-color: #3a4a59;
+    --highlight-color: #b03a3e;
+    --header-color: #444444;
+    --border-color: #d9d2bd;
+}
+
+body {
+    font-family: 'Special Elite', Courier, monospace;
+    background-color: var(--paper-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container pour toutes les pages */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--paper-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+/* Effet feuilles */
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--border-color);
+    pointer-events: none;
+    z-index: -1;
+    transform: rotate(-0.5deg);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Typo avec esthétique typewriter */
+h1, h2, h3, h4 {
+    font-family: 'Special Elite', Courier, monospace;
+    color: var(--text-color);
+    margin-top: 2rem;
+    letter-spacing: -0.5px;
+    text-shadow: 0.5px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    /* Simuler espacement des machines à écrire */
+    letter-spacing: -0.5px;
+    text-indent: 2rem;
+}
+
+/* Liens */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--link-color);
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    color: var(--highlight-color);
+    border-bottom: 1px solid var(--highlight-color);
+}
+
+/* Header et navigation */
+header {
+    background-color: var(--paper-color);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.title a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin-left: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border-color);
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Surlignage pour characters et persos */
+.character {
+    color: var(--highlight-color);
+    font-weight: bold;
+    position: relative;
+}
+
+.place {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1px;
+}
+
+/* Grille romans sur page d'accueil */
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.book {
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    transform: rotate(-0.3deg);
+    transition: transform 0.3s ease;
+}
+
+.book:hover {
+    transform: rotate(0deg);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book h3 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.publication {
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #666;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: var(--paper-color);
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--link-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Liste des personnages */
+.character-list, .place-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.aliases h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.aliases ul {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+/* Accueil */
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.dedication {
+    font-style: italic;
+    margin: 2rem 0;
+    padding: 1rem;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Contenu */
+.book-content {
+    margin-top: 2rem;
+}
+
+.chapter {
+    margin-bottom: 3rem;
+}
+
+/* Encore esthétique machine à écrire */
+/* Ink blots et smudges */
+.book-content p::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transform: scale(0.1);
+    opacity: 0.2;
+    top: calc(100% * var(--rand, 0.5));
+    left: calc(100% * var(--rand2, 0.8));
+    pointer-events: none;
+}
+
+/* Paragraphes inégaux */
+.book-content p {
+    position: relative;
+    line-height: 1.8;
+}
+
+/* Style ratures */
+.typo {
+    position: relative;
+    color: var(--highlight-color);
+}
+
+.typo::after {
+    content: 'x';
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    color: var(--highlight-color);
+}
+
+/* Timeline */
+/* Timeline Styles */
+.timeline-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline-section {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-color: var(--border-color);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.timeline-intro {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #444;
+}
+
+.events {
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.events::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 120px;
+    height: 100%;
+    width: 2px;
+    background: #3a4a59;
+}
+
+.event {
+    position: relative;
+    margin-bottom: 2rem;
+    padding-left: 150px;
+}
+
+.event::before {
+    content: '';
+    position: absolute;
+    left: 116px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #c8d8e4;
+    border: 2px solid #3a4a59;
+}
+
+.event-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    text-align: right;
+    font-weight: bold;
+    color: #3a4a59;
+}
+
+.event-title {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.event-desc {
+    display: block;
+    color: #555;
+    line-height: 1.4;
+}
+
+.character-timeline {
+    list-style: none;
+    padding: 0;
+}
+
+.character-connection {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+    border-left: 3px solid #3a4a59;
+    background-color: #f0f4f5;
+}
+
+.real-person {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.aliases {
+    color: #555;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+    
+    nav li {
+        margin: 0 0.75rem;
+    }
+    
+    main {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    .book-grid, .character-list, .place-list {
+        grid-template-columns: 1fr;
+    }
+
+    .events::before {
+        left: 30px;
+    }
+    
+    .event {
+        padding-left: 50px;
+    }
+    
+    .event::before {
+        left: 26px;
+    }
+    
+    .event-date {
+        position: static;
+        width: auto;
+        text-align: left;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}

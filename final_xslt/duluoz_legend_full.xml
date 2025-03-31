@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt_stylesheet.xsl"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>The Duluoz Legend: On the Road, The Subterraneans, and Visions of Cody</title>
+                <author>Jack Kerouac</author>
+                <respStmt>
+                    <persName><forename>Sidonie</forename><surname>Bassaïstéguy</surname></persName>
+                    <resp>encoding</resp>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Author's intended edition, containing works originally published: 
+                    On the Road (<date when="1957-09-05">5 September 1957</date>), 
+                    The Subterraneans (<date when="1958">1958</date>), 
+                    Visions of Cody (<date when="1972">1972</date>)
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <authority>John Sampas, the Estate of Jack Kerouac</authority>
+                <availability status="restricted">
+                    <licence>
+                        <p>copyright</p>
+                    </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Kerouac, Jack</author>
+                        <title>On the Road</title>
+                        <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>Viking Press</publisher>
+                            <date when="1957-09-05">5 September 1957</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>Kerouac, Jack</author>
+                        <title>The Subterraneans</title>
+                        <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>Grove Press</publisher>
+                            <date when="1958">1958</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct>
+                    <monogr>
+                        <author>Kerouac, Jack</author>
+                        <title>Visions of Cody</title>
+                        <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>McGraw Hill</publisher>
+                            <date when="1972">1972</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <text>
+        <front>
+            <div type="editorial">
+                <head type="section_title">List of characters</head>
+                <listPerson>
+                    <!-- Characters from all three novels -->
+                    <person xml:id="JK">
+                        <persName><forename>Jack</forename><surname>Kerouac</surname></persName>
+                        <persName type="alias"><forename>Sal</forename><surname>Paradise</surname></persName>
+                        <persName type="alias"><forename>Leo</forename><surname>Percepied</surname></persName>
+                        <persName type="alias"><forename>Jack</forename><surname>Duluoz</surname></persName>
+                        <idno type="wikidata">Q160534</idno>
+                    </person>
+                    <person xml:id="NC">
+                        <persName><forename>Neal</forename><surname>Cassady</surname></persName>
+                        <persName type="alias"><forename>Dean</forename><surname>Moriarty</surname></persName>
+                        <persName type="alias"><forename>Cody</forename><surname>Pomeray</surname></persName>
+                        <idno type="wikidata">Q167518</idno>
+                    </person>
+                    <person xml:id="LAH">
+                        <persName><forename>LuAnne</forename><surname>Henderson</surname></persName>
+                        <persName type="alias"><forename>Marylou</forename></persName>
+                        <idno type="wikidata">Q3264572</idno>
+                    </person>
+                    <person xml:id="AG">
+                        <persName><forename>Allen</forename><surname>Ginsberg</surname></persName>
+                        <persName type="alias"><forename>Carlo</forename><surname>Marx</surname></persName>
+                        <persName type="alias"><forename>Adam</forename><surname>Moorad</surname></persName>
+                        <persName type="alias"><forename>Irwin</forename><surname>Garden</surname></persName>
+                        <idno type="wikidata">Q6711</idno>
+                    </person>
+                    <person xml:id="HC">
+                        <persName><forename>Hal</forename><surname>Chase</surname></persName>
+                        <persName type="alias"><forename>Chad</forename><surname>King</surname></persName>
+                        <idno type="wikidata">Q105864598</idno>
+                    </person>
+                    <person xml:id="AR">
+                        <persName><forename>Anton</forename><surname>Rosenberg</surname></persName>
+                        <persName type="alias"><forename>Julian</forename><surname>Alexander</surname></persName>
+                    </person>
+                    <person xml:id="JN">
+                        <persName><forename>Jerry</forename><surname>Newman</surname></persName>
+                        <persName type="alias"><forename>Larry</forename><surname>O'Hara</surname></persName>
+                    </person>
+                    <person xml:id="LC">
+                        <persName><forename>Lucian</forename><surname>Carr</surname></persName>
+                        <persName type="alias"><forename>Sam</forename><surname>Vedder</surname></persName>
+                        <idno type="wikidata">Q2470845</idno>
+                    </person>
+                    <person xml:id="AL">
+                        <persName><forename>Alene</forename><surname>Lee</surname></persName>
+                        <persName type="alias"><forename>Mardou</forename><surname>Fox</surname></persName>
+                        <idno type="wikidata">Q4716139</idno>
+                    </person>
+                </listPerson>
+            </div>
+            <div type="editorial">
+                <head type="section_title">List of places</head>
+                <listPlace>
+                    <place xml:id="NY" type="city">
+                        <placeName>New York</placeName>
+                    </place>
+                    <place xml:id="LA" type="city">
+                        <placeName>Los Angeles</placeName>
+                    </place>
+                    <place xml:id="SLC" type="city">
+                        <placeName>Salt Lake City</placeName>
+                    </place>
+                    <place xml:id="NM" type="state">
+                        <placeName>New Mexico</placeName>
+                    </place>
+                    <place xml:id="CA" type="state">
+                        <placeName>California</placeName>
+                    </place>
+                </listPlace>
+            </div>
+            <div>
+                <p>To America, whatever that is</p>
+            </div>
+        </front>
+        
+        <body>
+            <div1 type="book" n="1">
+                <head type="title">On the Road</head>
+                <div2 type="part" n="1">
+                    <div3 type="chapter" n="1">
+                        <head>1</head>
+                        <p>I first met <persName ref="NC"><forename>Dean</forename></persName> not long after my wife and I split up. I had just gotten over a serious illness that I won't bother to talk about, except that it had something to do with the miserably weary split-up and my feeling that everything was dead. With the coming of <persName ref="NC"><forename>Dean</forename><surname>Moriarty</surname></persName> began the part of my life you could call my life on the road. Before that I'd often dreamed of going West to see the country, always vaguely planning and never taking off. <persName ref="NC"><forename>Dean</forename></persName> is the perfect guy for the road because he actually was born on the road, when his parents were passing through <placeName ref="#SLC">Salt Lake City</placeName> in <date when="1926">1926</date>, in a jalopy, on their way to <placeName ref="LA">Los Angeles</placeName>. First reports of him came to me through <persName ref="HC"><forename>Chad</forename><surname>King</surname></persName>, who'd shown me a few letters from him written in a <placeName ref="#NM">New Mexico</placeName> whoorm school. I was tremendously interested in the letters because they so naively and sweetly asked <persName ref="HC"><forename>Chad</forename></persName> to teach him all about <persName><forename>Nietzsche</forename></persName> and all the wonderful intellectual things that <persName ref="HC"><forename>Chad</forename></persName> knew. At one point <persName ref="AG"><forename>Carlo</forename></persName> and I talked about the letters and wondered if we would ever meet the strange <persName ref="NC"><forename>Dean</forename><surname>Moriarty</surname></persName>. This is all far back, when <persName ref="NC"><forename>Dean</forename></persName> was not the way he is today, when he was a young jailkid shrouded in mystery. Then news came that <persName ref="NC" type="alias"><forename>Dean</forename></persName> was out of reform school and was coming to <placeName ref="NY">New York</placeName> for the first time; also there was talk that he had just married a girl called <persName ref="LAH"><forename>Marylou</forename></persName>.</p>
+                    </div3>
+                </div2>
+            </div1>
+            
+            <div1 type="book" n="2">
+                <head type="title">The Subterraneans</head>
+                <div2 type="part" n="1">
+                    <div3 type="chapter" n="1">
+                        <head>1</head>
+                        <p>ONCE I WAS YOUNG and had so much more orientation and could talk with nervous intelligence about everything and with clarity and without as much literary preambling as this; in other words this is the story of an unself-confident man, at the same time of an egomaniac, naturally, facetious won't do—just to start at the beginning and let the truth seep out, that's what I'll do—. It began on a warm summernight—ah, she was sitting on a fender with <persName ref="#AR"><forename>Julien</forename> <surname>Alexander</surname></persName> who is … let me begin with the history of the subterraneans of <placeName ref="#NY">San Francisco</placeName>…</p>
+                        <p><persName ref="#AR"><forename>Julien</forename> <surname>Alexander</surname></persName> is the angel of the subterraneans, the subterraneans is a name invented by <persName ref="#AG"><forename>Adam</forename> <surname>Moorad</surname></persName> who is a poet and friend of mine who said "They are hip without being slick, they are intelligent without being corny, they are intellectual as hell and know all about Pound without being pretentious or talking too much about it, they are very quiet, they are very Christlike." <persName ref="#AR"><forename>Julien</forename></persName> certainly is Christlike. I was coming down the street with <persName ref="#JN"><forename>Larry</forename> <surname>O'Hara</surname></persName> old drinking buddy of mine from all the times in <placeName ref="#NY">San Francisco</placeName> in my long and nervous and mad careers I've gotten drunk and in fact cadged drinks off friends with such "genial" regularity nobody really cared to notice or announce that I am developing or was developing, in my youth, such bad freeloading habits though of course they did notice but liked me and as <persName ref="#LC"><forename>Sam</forename></persName> said "Everybody comes to you for your gasoline boy, that's some filling station you got there" or say words to that effect—old <persName ref="#JN"><forename>Larry</forename> <surname>O'Hara</surname></persName> always nice to me, a crazy Irish young businessman of <placeName ref="#NY">San Francisco</placeName> with Balzacian backroom in his bookstore where they'd smoke tea and talk of the old days of the great Basie band or the days of the great Chu Berry—of whom more anon since she got involved with him too as she had to get involved with everyone because of knowing me who am nervous and many leveled and not in the least one souled—not a piece of my pain has showed yet—or suffering—Angels, bear with me—I'm not even looking at the page but straight ahead into the sadglint of my wallroom and at a Sarah Vaughan Gerry Mulligan Radio KROW show on the desk in the form of a radio, in other words, they were sitting on the fender of a car in front of the Black Mask bar on Montgomery Street, <persName ref="#AR"><forename>Julien</forename> <surname>Alexander</surname></persName> the Christlike unshaved thin youthful quiet strange almost as you or as <persName ref="#AG"><forename>Adam</forename></persName> might say apocalyptic angel or saint of the subterraneans, certainly star (now), and she, <persName ref="#AL"><forename>Mardou</forename> <surname>Fox</surname></persName>, whose face when first I saw it in Dante's bar around the corner made me think, "By God, I've got to get involved with that little woman".</p>
+                    </div3>
+                </div2>
+            </div1>
+            
+            <div1 type="book" n="3">
+                <head type="title">Visions of Cody</head>
+                <div2 type="part" n="1">
+                    <div3 type="chapter" n="1">
+                        <head>1</head>
+                        <p>IN THE AUTUMN OF <date when="1951">1951</date> I began thinking of <persName ref="#NC"><forename>Cody</forename> <surname>Pomeray</surname></persName>, thinking of <persName ref="#NC"><forename>Cody</forename><surname>Pomeray</surname></persName>. We had been great buddies on the road. I was in <placeName ref="#NY">New York</placeName> and I wanted to go to <placeName ref="#CA">California</placeName> and see him, but I had no money. I'm in an old El station on Third Avenue and 47th, sitting in wooden sunken-seat benches along the walls—the Porter sign in the door is almost all faded.</p>
+                        <p>Main thing, <persName ref="#NC"><forename>Cody</forename></persName> had given up and was following not me, but anybody sweet and good and kind in the world, like he'd died and came over to see me before his departure, dammit, into eternity. This was a dream last night. And <persName ref="#NC"><forename>Cody</forename></persName> let others do talking, for once was a smiling and bemused listener, like <persName ref="#AG"><forename>Irwin</forename></persName> or everybody—He said something: "I'll only be back for a short time but while I'm here you've got to take care of me, understand?—you've got to see I don't get lonely, I don't know anybody in that cafeteria of yours on Fourth Street and Bowery, I don't ever go to those high balcony movies on V-Square, Brooklyn is too mad, the Els confuse me, the canals, the little white houses, the ships east or west and that pump at the foot of the hill where you peel potatoes I have nothing to do with it—I'm in your hands entirely as you were in Frisco when I jumped back in the car going fullspeed—I want to meet people and girls—take me to the white one, the soft one you had on your couch there—Oh this is a cold dark town, man."</p>
+                    </div3>
+                </div2>
+            </div1>
+        </body>
+        
+        <back>
+            <div type="editorial">
+                <head type="section_title">The Duluoz Legend Series</head>
+                <listBibl>
+                    <bibl xml:id="tdl_otr">
+                        <title>On the Road</title>
+                        <date when="1957">First published 1957</date>
+                    </bibl>
+                    <bibl xml:id="tdl_ts">
+                        <title>The Subterraneans</title>
+                        <date when="1958">First published 1958</date>
+                    </bibl>
+                    <bibl xml:id="tdl_voc">
+                        <title>Visions of Cody</title>
+                        <date when="1972">First published 1972</date>
+                    </bibl>
+                </listBibl>
+            </div>
+        </back>
+    </text>
+</TEI>
